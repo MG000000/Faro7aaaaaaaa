@@ -512,7 +512,7 @@ button,input{font:inherit;color:inherit}
   function toast(msg){ const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 2600); }
   function send(){
     const t = input.value.trim(); if(!t) return;
-    const url = 'https://wa.me/?text=' + encodeURIComponent('ردّي على ستوري عيد ميلادي 🎂\n' + t);
+    const url = 'https://wa.me/?text=' + encodeURIComponent('لا بس الهدية عجبتني\n' + t);
     const w = window.open(url, '_blank', 'noopener');
     if(!w) toast('افتحي واتساب وابعتيهالي بنفسك 😅');
     else toast('اختاري مين تبعتيله من واتساب');
